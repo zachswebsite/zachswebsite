@@ -7,7 +7,7 @@ Here are some ideas to get you started:
 -->
 - 🔭 I’m currently working on a personal website to showcase my web design skills as well as my interest in Game Design. 
 - 🌱 I’m currently learning **HTML, CSS, and Javascript**. 
-- 👯 I’m looking to collaborate on anything **Video Game Design and/or Web Design** related. 
+- 👯 I’m looking to collaborate on anything **Computer Programming** related. 
 - 💬 Ask me about my programming knowledge or experience. 
 - ---
 - 📫 How to reach me: zachwillson0307@gmail.com
