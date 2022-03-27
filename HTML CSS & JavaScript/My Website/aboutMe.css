@@ -1,0 +1,531 @@
+
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+body, html {
+  height: 100%;
+  width:100%;
+  padding:0;
+  margin: 0;
+}
+body{
+  position:relative;
+  background-color: lightblue;
+}
+p{
+  text-align: center;
+  font-stretch:expanded;
+}
+
+.image1{
+  max-width: auto;
+  height: 100%;
+}
+/*container for the profile picture*/
+.profilePic{
+   /*border:solid 2px green;*/
+   bottom:0%;
+   position:absolute;
+   width:100%;
+   height:45%;
+   display:flex;
+   justify-content: center;
+}
+
+#page1{
+  position:relative;
+  width:100%;
+  height:100%;
+  background-color:hsl(0, 0%, 98.04%);
+}
+#page2{
+  position:relative;
+  width:100%;
+  height:100%;
+  background-color:hsl(0, 0%, 98.04%);
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5c942b8dc2ff6125190feff1/1587404679388-41SCIF2ZFIAL5B1RG8X8/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/melongosha_100.jpg?format=750w");
+  background-repeat:no-repeat;
+  background-position:200% 100%;
+  background-size:80%;
+  font-family:sans-serif;
+}
+#contactPage{
+  width:100%;
+  height:100%;
+  background-image: url("https://wallpapertag.com/wallpaper/full/8/0/b/115326-background-white-1920x1138-for-xiaomi.jpg");
+  background-repeat:no-repeat;
+  background-position:bottom;
+  background-size: cover;
+  background-color:hsl(0, 0%, 98.04%);
+}
+
+div a{
+  font-family:Bungee Shade,Rockwell,Century Gothic,Geneva,Optima;
+  color:black;
+  font-size:10vh; /*3vw*/
+  transition: font-size 2s,font-weight 2s,opacity 1s,color 2s;
+  text-align:center;
+  text-overflow: "-";
+  text-decoration:none;
+}
+a:link{
+  text-decoration: none!important;
+}
+div a:hover{
+  /*transition the size a bit larger*/
+  font-size:12vh;
+  opacity:1.0;
+  color:black;
+}
+
+span{
+  color:black;
+  overflow:visible;
+  transition: font-size 2.5s, font-weight 2.5s,opacity 1s, color 2s;
+  font-size:3vh;
+  opacity: 0.7;
+  font-weight:bolder;
+  text-transform:uppercase;
+  font-family:Century Gothic,Geneva,Optima;
+}
+span:hover{
+  font-size:4vh;
+  opacity:.9;
+  color:black;
+}
+#div1{
+  position:relative;
+  top:30vh;
+  left:0;
+  margin:0;
+  padding:0;
+  width:45%;
+  height:50%;
+  /*border: solid 2px green;*/
+  text-align:center;
+  font-family:Shadows Into Light;
+  font-size: 2.3vw;
+  font-weight: bolder;
+}
+
+.aboutMeIntro{
+  position:relative;
+  font-family:Shadows Into Light;
+  font-size:5vh;
+  display:inline;
+}
+
+#name{
+  font-family:Shadows Into Light;
+  font-size:7vh;
+  color:#0074D9;
+  display:inline;
+  margin-top:10%;
+}
+.button{
+  transform: scale(.8);
+  font-family:Shadows Into Light;
+  background-color: #0074D9; /* Blue */
+  border: solid 2px black;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 5vh;
+  font-weight: bolder;
+  margin:0;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1{
+  border: 2px solid #0074D9;
+}
+.button1:hover{
+  background-color:white;
+  color:black;
+}
+.button2{
+  background-color: white;
+  color: black;
+  border: 2px solid #0074D9;
+}
+.button2:hover{
+  background-color: #0074D9;
+  color: white;
+}
+
+.row1{
+  margin-bottom:6vw;
+}
+.row3{
+  margin-top:3vw;
+}
+
+/*size for xs , and below*/
+@media (max-width: 575.98px) {
+  span{
+    display:block;
+  }
+  #page2{
+    background-position:0% 100%;
+    background-size:150%;
+  }
+}
+
+
+#aboutMeBox{
+  position:relative;
+  border:solid 2px green;
+  background-color:rgba(0, 0, 0, .6);
+  color:white;
+  overflow: auto;
+  border-radius: 40px 0px 0px 50px;
+  height:70vh;
+  margin-top:5vh;
+  margin-bottom:5vh;
+}
+
+.buttons{
+  font-family:Shadows Into Light;
+  background-color: #E97264; /* Blue */
+  border: solid 2px black;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  overflow:auto;
+  font-size: 3.5vh;
+  font-weight: bolder;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  position:relative;
+}
+
+.buttons1{
+  border: 2px solid #E97264;
+}
+
+.buttons1:hover{
+  background-color:white;
+  color:black;
+}
+
+.buttons2{
+  background-color: white;
+  color: black;
+  border: 2px solid #E97264;
+}
+
+.buttons2:hover{
+  background-color: #E97264;
+  color: white;
+}
+
+.aboutMeText{
+  margin-left:2vw;
+  margin-right:2vw;
+  /*border:solid 2px red;*/
+  line-height:1.5;
+}
+
+.aboutMeText1{
+  margin-bottom:3vh;
+  text-indent:2vw;
+}
+
+.aboutMeText2{
+  text-indent:2vw;
+  margin-bottom:5vh;
+}
+
+#aboutMeTitle{
+  font-weight:bolder;
+  font-size:2em;
+  line-height:2;
+  margin-left:2vw;
+  margin-right:2vw;
+  /*border:solid 2px yellow;*/
+}
+
+#aboutMeIntro{
+  font-weight:bold;
+  margin-right:2vw;
+  margin-left:2vw;
+  margin-bottom:5vh;
+  line-height:1.8;
+  font-size:1.3em;
+  /*border:solid 2px blue;*/
+}
+/*
+.lineDesign{
+  width:12%;
+  text-align:left;
+  margin-left:2vw;
+  height:2px;
+  border:none;
+  background-color:hsl(29.84, 74.41%, 62.55%);
+}*/
+hr{
+  width:25%;
+  text-align:left;
+  margin-left:2vw;
+  background-color:hsl(168, 100%, 75%);
+  border:5px solid hsl(168, 100%, 75%);
+}
+.line1{
+  width:40%;
+  border:2px solid hsl(168, 100%, 75%);
+}
+
+/* CONTACT PAGE */
+#contactPage{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height:100%;
+}
+.contactContainer{
+  width:100%;
+  height:100%;
+  left:0%;
+  display:flex;
+  justify-content: center;
+}
+.container1 {
+	width:30%;
+  height:80%;
+  top:10%;
+  left:30%;
+  overflow:auto;
+	margin:0 auto;
+	position:absolute;
+  background-color:hsl(0, 0%, 98.04%);
+  border-radius:20px 0px 0px 20px;
+  border: solid 2px hsl(173.33, 26.69%, 65.2%);
+  display:inline-block;
+}
+/*holds button31 and button32 in container:*/
+.container2{
+  position:absolute;
+  /*display:inline-block;*/
+  left:62%;
+  top:70%;
+}
+
+.line2{
+  background-color:hsl(173.33, 26.69%, 80.2%);
+  margin-left:0;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+  margin:0;
+  padding:0;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background-color:hsl(173.33, 26.69%, 65.2%);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background-color:hsl(173.33, 26.69%, 50.2%);
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+.button3{
+  font-family:Shadows Into Light;
+  background-color: hsl(173.33, 26.69%, 65.2%); /* Blue */
+  border: solid 2px black;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  overflow:auto;
+  font-size: 5vh;
+  font-weight: bolder;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position:relative;
+}
+.button31{
+  border: 2px solid hsl(173.33, 26.69%, 65.2%);
+  margin-right:3vw;
+}
+.button31:hover{
+  background-color:white;
+  color:black;
+}
+.button32{
+  background-color: white;
+  color: black;
+  border: 2px solid hsl(173.33, 26.69%, 65.2%);
+}
+.button32:hover{
+  background-color: hsl(173.33, 26.69%, 65.2%);
+  color: white;
+}
+
+/*small screen size, covers small and Below*/
+ @media (max-width: 767.98px) {
+   .row3{
+     margin-top:0;
+   }
+   .row1{
+     margin-bottom:0;
+   }
+   #page2{
+     background-position:0% 100%;
+     background-size:150%;
+   }
+}
+@media (min-width: 767.98px) {
+  .profilePic{
+     right:0%;
+     position:absolute;
+     width:45%;
+     height:70%;
+  }
+}
+
+/*medium screen size, covers medium and above*/
+@media (min-width: 991.98px) {
+  #page2{
+    background-position:200% 100%;
+    background-size:80%;
+  }
+}
+
+/*medium and below*/
+@media (max-width: 991.98px){
+  .container1{
+    height:60%;
+    width:70%;
+    left:15%;
+  }
+  .container2{
+    top:80%;
+    /*left:36%;*/
+    width:100%;
+    left:0%;
+    justify-content: center;
+    display: flex;
+  }
+  #button31{
+
+  }
+  #button32{
+
+  }
+}
+
+/*large screen size, covers large and above*/
+@media (min-width: 1199.98px) {
+  .aboutMeIntro{
+    font-size:7vh;
+  }
+  #name {
+    font-size:10vh;
+  }
+  #page2{
+    background-position:200% 100%;
+    background-size:80%;
+  }
+}
+
+ /*// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width*/

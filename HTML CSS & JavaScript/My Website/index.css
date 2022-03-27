@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade");
+body, html {
+  height: 100%;
+  width:100%;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  /*border: solid red 3px;*/
+}
+.div1{
+  /* The image used */
+  background-image: radial-gradient(circle, white, #4682B4 40%, black);
+  background-color:#4682B4;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div a{
+  font-family:Bungee Shade,Rockwell,Century Gothic,Geneva,Optima;
+  color:#94daff;
+  font-size:10vh; /*3vw*/
+  transition: font-size 2s,font-weight 2s,opacity 1s,color 2s;
+  /*border:solid yellow 2px;*/
+  text-align:center;
+  text-overflow: "-";
+  text-decoration:none;
+}
+a:link{
+  text-decoration: none!important;
+}
+div a:hover{
+  /*transition the size a bit larger*/
+  font-size:12vh;
+  opacity:1.0;
+  color:#d1efff;
+}
+
+span{
+  color:#b3e5ff;
+  overflow:visible;
+  transition: font-size 2.5s, font-weight 2.5s,opacity 1s, color 2s;
+  font-size:3vh;
+  opacity: 0.7;
+  font-weight:bolder;
+  text-transform:uppercase;
+  font-family:Century Gothic,Geneva,Optima;
+}
+span:hover{
+  font-size:4vh;
+  opacity:.9;
+  color:#d1efff;
+}
+
+
+svg{
+  height:100%;
+  width:30vw;
+  padding-top: 5vh;
+}
+.row{
+}
+.row2{
+  height:35vh;
+  margin-bottom:5vh;
+}
+.row3{
+  height:5vh;
+}
+.row4{
+  height:10vh;
+}
+.row5{
+  height:5vh;
+}
+.container{
+  /*border:solid yellow 4px;*/
+  width:100%;
+  height:auto;
+}
+h1{
+  height:100%;
+  /*border: solid blue 1px;*/
+  text-align:center;
+  font-size:4em;
+  transition:color 2s;
+  letter-spacing:6px;
+  margin:0px;
+  color:#0000CD;
+  font-family:Bungee Shade,Rockwell,Century Gothic,Geneva,Optima;
+}
+h1:hover{
+  color:#000000;
+}
+p{
+  height:100%;
+  /*border:solid green 1px;*/
+  text-align:center;
+  opacity:.9;
+  font-family:Century Gothic,Geneva,Optima;
+}
+#firstP{
+  font-stretch:expanded;
+  letter-spacing:5px;
+  font-size:2em;
+  font-weight:bold;
+  margin-bottom:0px;
+  color:#000000;
+  /*border: 1px solid red;*/
+}
+#secondP{
+  font-weight:bold;
+  opacity:1;
+  margin:0px;
+  font-size:3vh;
+  color:#000000;
+}
+/*size for xs devices*/
+@media (max-width: 575.98px) {
+  span{
+    display:block;
+  }
+}

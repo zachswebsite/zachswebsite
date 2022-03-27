@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+body, html {
+  padding: 0px;
+  margin: 0px;
+  height:100%;
+}
+body{
+  width:100%;
+  height:70%;
+  font-size: 100%;
+  background-color:black;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: linear-gradient(80deg, #22B2B2 30%, #96DEDA 80%);
+  background-image: -webkit-linear-gradient(80deg, #22B2B2 30%, #96DEDA 80%);
+  background-image: -moz-linear-gradient(80deg, #22B2B2 30%, #96DEDA 80%);
+  background-image: -o-linear-gradient(80deg, #22B2B2 30%, #96DEDA 80%);
+
+  /*background: linear-gradient(360deg,#00537E 10%,#3AA17E 360%);*/
+}
+.header1{
+  text-align:center;
+  position:relative;
+  /*border:solid 2px blue;*/
+  width:56%;
+  left:22%;
+}
+h1{
+  display:inline;
+  font-family:Bungee Shade,Rockwell,Century Gothic,Geneva,Optima;
+}
+div a{
+  font-family:Bungee Shade,Rockwell,Century Gothic,Geneva,Optima;
+  color:black;
+  font-size:10vh; /*3vw*/
+  transition: font-size 2s,font-weight 2s,opacity 1s,color 2s;
+  text-align:center;
+  text-overflow: "-";
+  text-decoration:none;
+}
+a:link{
+  text-decoration: none!important;
+}
+div a:hover{
+  /*transition the size a bit larger*/
+  font-size:12vh;
+  opacity:1.0;
+  color:black;
+}
+
+span{
+  color:black;
+  overflow:visible;
+  transition: font-size 2.5s, font-weight 2.5s,opacity 1s, color 2s;
+  font-size:3vh;
+  opacity: 0.7;
+  font-weight:bolder;
+  text-transform:uppercase;
+  font-family:Century Gothic,Geneva,Optima;
+}
+span:hover{
+  font-size:4vh;
+  opacity:.9;
+  color:black;
+}
+.carouselContainer{
+  top:30%;
+  position:absolute;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  /*border:solid 2px green;*/
+}
+.buttonContainer{
+  bottom:5%;
+  position:absolute;
+  /*border:solid 2px red;*/
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+.buttons{
+  opacity:.4;
+  position:relative;
+  vertical-align:center;
+  display:inline-block;
+  /*border:solid 2px red;*/
+}
+.previous-button{
+  height:10vh;
+  width:14vh;
+  border-radius:10px;
+  margin-right:5vh;
+}
+.next-button{
+  height:10vh;
+  width:14vh;
+  border-radius:10px;
+}
+* { box-sizing: borderbox; }
+nav a:nth-child(1){
+}
+nav a:nth-child(4){
+}
+.scene {
+  border: 3px solid violet;
+  margin: 40px 0;
+  position: relative;
+  width: 210px;
+  height: 140px;
+  margin: 40px auto;
+  top:20%;
+  perspective: 1000px;
+}
+
+.carousel {
+  border:solid 5px white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform:scale3d(1,1,1);
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  left: 10px;
+  top: 10px;
+  border: 3px solid black;
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.carousel__cell:nth-child(9n+1) { background-image: url('C:/Users/19139/Desktop/Misc/WebDesign/Images/Hawaii.jpg'); background-position: center;background-repeat: no-repeat;background-size: cover}
+.carousel__cell:nth-child(9n+2) { background-image: url('C:/Users/19139/Desktop/Misc/WebDesign/Images/SlowDancing.jpg'); background-position: center top	;background-repeat: no-repeat;background-size: cover}
+.carousel__cell:nth-child(9n+3) { background-image: url('C:/Users/19139/Desktop/Misc/WebDesign/Images/carpeDiem.jpg'); background-position: center;background-repeat: no-repeat;background-size: cover }
+.carousel__cell:nth-child(9n+4) { background-image: url('C:/Users/19139/Desktop/Misc/WebDesign/Images/colorado.jpg'); background-position: center;background-repeat: no-repeat;background-size: cover }
+.carousel__cell:nth-child(9n+5) { background-image: url('C:/Users/19139/Desktop/Misc/WebDesign/Images/img1.jpg'); background-position: center;background-repeat: no-repeat;background-size: cover }
+.carousel__cell:nth-child(9n+6) { background-image: url('C:/Users/19139/Desktop/Misc/WebDesign/Images/inception.jpg'); background-position: center;background-repeat: no-repeat;background-size: cover }
+.carousel__cell:nth-child(9n+7) { background-image: url('C:/Users/19139/Desktop/Misc/WebDesign/Images/slowTron.jpg'); background-position: center;background-repeat: no-repeat;background-size: cover}
+.carousel__cell:nth-child(9n+8) { background-image: url('C:/Users/19139/Desktop/Misc/WebDesign/Images/tronUprising.jpg'); background-position: center;background-repeat: no-repeat;background-size: cover}
+.carousel__cell:nth-child(9n+0) { background-image: url('C:/Users/19139/Desktop/Misc/WebDesign/Images/SlowDancing.jpg'); background-position: center;background-repeat: no-repeat;background-size: cover}
+
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); scale3d(1,1,1); }
+.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); scale3d(1,1,1);}
+.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); scale3d(1,1,1);}
+.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(288px); scale3d(1,1,1);}
+.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(288px); scale3d(1,1,1);}
+.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(288px); scale3d(1,1,1);}
+.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(288px); scale3d(1,1,1);}
+.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); scale3d(1,1,1);}
+.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); scale3d(1,1,1);}
+
+audio {
+  position:absolute;
+  width: 100%;
+  left:0px;
+  top:100%;
+  box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+  border-radius: 90px;
+  transform: scale(.7);
+}
